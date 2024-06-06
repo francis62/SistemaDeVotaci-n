@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sistema de votación</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="images/presidencia.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <link href="others/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="others/animate/animate.min.css" rel="stylesheet">
+  <link href="others/venobox/venobox.css" rel="stylesheet">
+  <link href="others/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Header-->
+<header id="header">
+  <div class="container" style="display: flex; align-items: center; justify-content: space-between; overflow: hidden;">
+    <div id="logo" class="pull-left">
+       <h1>
+          <a >
+            <img src="images/presidencia.jpg" alt="Presidencia" style="height: 150px; vertical-align: middle;">
+            <span>VOTACIONES </span>NACIONALES
+          </a>
+        </h1>
+    </div>
+
+    <nav id="nav-menu-container">
+      <ul class="nav-menu">
+        <li class="reg" class="menu-active"><a href="index.html" >Cuenta</a></li>
+        <li class="vot" style="display: none"><a href="vote.html" >Votar</a></li>
+        <li ><a href="results.html" >Resultados</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li class="buy-tickets"><a href="admin.html">Admininistrador</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!--Header-->
+
+<!--Intro-->
+<section id="intro">
+  <div class="intro-container wow fadeIn">
+    <h1 style="text-transform: initial" id="index-text" >Crear<span> cuenta</span></h1>
+    <div id="loader">
+      <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+        <circle cx="170" cy="170" r="160" stroke="#869ead"/>
+        <circle cx="170" cy="170" r="135" stroke="#fff"/>
+        <circle cx="170" cy="170" r="110" stroke="#869ead"/>
+        <circle cx="170" cy="170" r="85" stroke="#fff"/>
+      </svg>    
+    </div>
+    <div id="content" style="display: none; color: #fff; border-radius: 2%;">
+      <form onSubmit="App.addUser(); return false;" >
+        <div class="form-row" style="padding-top: 15px">
+          <div class="form-group col-md-6">
+            <label for="firstName" >Nombre</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Nombre" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="lastName">Apellido</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Apellido" required>
+          </div>
+        </div>
+        <div class="form-group col-lg-12">
+          <label for="idNumber" >DNI</label>
+          <input type="text" class="form-control" id="idNumber" placeholder="DNI" required>
+        </div>
+        <div class="form-group col-lg-12">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Email" required>
+        </div>
+        <div class="form-group col-lg-12">
+          <label for="password">Contraseña</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" required>
+        </div>
+        <button type="submit" class="btn " style="background-color: #869ead; color: white; margin-bottom: 2%;">Registrar</button>
+        <div>
+          <a href="login.html" style="color: #fff; margin-bottom: 2%;"> Ya tienes cuenta? Click para ir ingresar</a>
+        </div>
+      </form>
+      <a  class="about-btn scrollto" id="accountAddress" class="text-center" style="background-color: #869ead; color: black"></a>
+    </div>
+  </div>
+</section>
+<!--Intro-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+
+<script src="others/jquery/jquery.min.js"></script>
+<script src="others/jquery/jquery-migrate.min.js"></script>
+<script src="others/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="others/easing/easing.min.js"></script>
+<script src="others/superfish/hoverIntent.js"></script>
+<script src="others/superfish/superfish.min.js"></script>
+<script src="others/wow/wow.min.js"></script>
+<script src="others/venobox/venobox.min.js"></script>
+<script src="others/owlcarousel/owl.carousel.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

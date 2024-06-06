@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sistema de votación</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="images/presidencia.jpg" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+    <link href="others/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="others/animate/animate.min.css" rel="stylesheet">
+    <link href="others/venobox/venobox.css" rel="stylesheet">
+    <link href="others/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!--Header-->
+<header id="header">
+    <div class="container" style="display: flex; align-items: center; justify-content: space-between; overflow: hidden;">
+
+        <div id="logo" class="pull-left">
+            <h1>
+                <a >
+                  <img src="images/presidencia.jpg" alt="Presidencia" style="height: 150px; vertical-align: middle;">
+                  <span>VOTACIONES </span>NACIONALES
+                </a>
+            </h1>
+        </div>
+
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li class="reg" ><a href="index.html" >Cuenta</a></li>
+                <li class="vot" ><a href="vote.html" >Votar</a></li>
+                <li class="menu-active" ><a href="results.html" >Resultados</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+                <li class="buy-tickets"><a href="admin.html">Admininistrador</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--Header-->
+
+<!--Intro-->
+<section id="intro">
+    <div class="intro-container wow fadeIn">
+        <h1 style="text-transform: initial"  id="result-text">Resultado de<span> elecciones</span></h1>
+        <div id="loader">
+            <svg class="loader" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+                <circle cx="170" cy="170" r="160" stroke="#869ead"/>
+                <circle cx="170" cy="170" r="135" stroke="#fff"/>
+                <circle cx="170" cy="170" r="110" stroke="#869ead"/>
+                <circle cx="170" cy="170" r="85" stroke="#fff"/>
+            </svg>    
+        </div>
+        <div id="content" style="display: none;">
+            <table class="container table table-sm table-bordered "   style="color: white; width: 600px;">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Partido</th>
+                    <th scope="col">Votos</th>
+                </tr>
+                </thead>
+                <tbody id="candidatesResults">
+                </tbody>
+            </table>
+            <div id="votedFor"></div>
+            <!--<a  class="about-btn scrollto" id="accountAddress" class="text-center"></a>-->
+        </div>
+    </div>
+</section>
+<!--Intro-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+<script src="js/app.js"></script>
+
+<script src="others/jquery/jquery.min.js"></script>
+<script src="others/jquery/jquery-migrate.min.js"></script>
+<script src="others/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="others/easing/easing.min.js"></script>
+<script src="others/superfish/hoverIntent.js"></script>
+<script src="others/superfish/superfish.min.js"></script>
+<script src="others/wow/wow.min.js"></script>
+<script src="others/venobox/venobox.min.js"></script>
+<script src="others/owlcarousel/owl.carousel.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
